@@ -130,7 +130,8 @@
     const logoutButton = $('#close-session')
 
     loginForm?.addEventListener('submit', e => {
-      e.prevetDefault()
+      
+      e.preventDefault()
       const username = $('#login-username').value
       const password = $('#login-password').value
 

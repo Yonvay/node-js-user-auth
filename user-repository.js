@@ -7,7 +7,7 @@ import { SALT_ROUNDS } from './config.js'
 
 const { Schema } = new DBLocal({ path: './db' })
 
-const User = Schema('Usert', {
+const User = Schema('User', {
   _id: {type: String, required: true},
   username: {type: String, required: true},
   password: {type: String, required: true},
@@ -38,6 +38,7 @@ export class UserRepository {
 
     const user = User.findOne({ username })
     if (!user) throw new Error('User does not exist')
+
     const isValid = await bcrypt.compare(password, user.password)
     if (!isValid) throw new Error('password is invalid')
     const { password: _, ...publicUser } = user
