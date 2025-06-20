@@ -5,3 +5,15 @@ Este repositorio, corresponde a la septima clase de Node.js que enseña Middu, t
 Tomé la iniciativa de subirlo para ayudar a quienes están aprendiendo, esto, porque no lo encontré en el repositorio del curso [curso-node-js](https://github.com/midudev/curso-node-js) ni alguno similar.
 
 *Todos los creditos a Miguel Ángel Durán [@midudev](https://x.com/midudev).*
+
+- Instalación del proyecto ✅
+- Usuarios en base de datos ✅
+- Registro de usuarios ✅
+- Autenticación básica con login y password ✅
+- Verificación de autenticación ✅
+- Sesión de usuario con cookie ✅
+- Json Web Tokens ✅
+- Refactorizar con un middleware ✅
+- Cerrar sesión ✅
+- Refresh Token ❌
+- Más adelante: Passport y OAuth 2.0 ❌
